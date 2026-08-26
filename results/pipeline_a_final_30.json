@@ -1,0 +1,242 @@
+[
+  {
+    "task_id": "HumanEval/53",
+    "difficulty": "easy",
+    "generated_code": "def add(x: int, y: int):\n    return x + y",
+    "latency_sec": 0.8815293312072754,
+    "tokens": 144,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/23",
+    "difficulty": "easy",
+    "generated_code": "def strlen(string: str) -> int:\n    return len(string)",
+    "latency_sec": 1.051867961883545,
+    "tokens": 133,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/45",
+    "difficulty": "easy",
+    "generated_code": "def triangle_area(a, h):\n    return (a * h) / 2",
+    "latency_sec": 0.7551541328430176,
+    "tokens": 139,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/27",
+    "difficulty": "easy",
+    "generated_code": "def flip_case(string: str) -> str:\n    return ''.join(c.swapcase() for c in string)",
+    "latency_sec": 1.0767383575439453,
+    "tokens": 147,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/15",
+    "difficulty": "easy",
+    "generated_code": "def string_sequence(n: int) -> str:\n    return ' '.join(map(str, range(n + 1)))",
+    "latency_sec": 1.959394931793213,
+    "tokens": 168,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/16",
+    "difficulty": "easy",
+    "generated_code": "def count_distinct_characters(string: str) -> int:\n    return len(set(string.lower()))",
+    "latency_sec": 0.9704163074493408,
+    "tokens": 165,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/98",
+    "difficulty": "easy",
+    "generated_code": "def count_upper(s):\n    vowels = 'AEIOU'\n    count = 0\n    for i in range(len(s)):\n        if i % 2 == 0 and s[i].upper() in vowels:\n            count += 1\n    return count",
+    "latency_sec": 2.157609701156616,
+    "tokens": 202,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/35",
+    "difficulty": "easy",
+    "generated_code": "def max_element(l: list):\n    return max(l)",
+    "latency_sec": 0.7561194896697998,
+    "tokens": 170,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/13",
+    "difficulty": "easy",
+    "generated_code": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b:\n        a, b = b, a % b\n    return a",
+    "latency_sec": 1.5089383125305176,
+    "tokens": 180,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/83",
+    "difficulty": "easy",
+    "generated_code": "def starts_one_ends(n):\n    if n == 1:\n        return 1\n    else:\n        return 2 * (10 ** (n - 1) - 1)",
+    "latency_sec": 1.8237781524658203,
+    "tokens": 159,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/50",
+    "difficulty": "medium",
+    "generated_code": "def decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+    "latency_sec": 2.0905826091766357,
+    "tokens": 224,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/58",
+    "difficulty": "medium",
+    "generated_code": "def common(l1: list, l2: list):\n    set1 = set(l1)\n    set2 = set(l2)\n    common_elements = set1 & set2\n    return sorted(list(common_elements))",
+    "latency_sec": 2.1388132572174072,
+    "tokens": 235,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/89",
+    "difficulty": "medium",
+    "generated_code": "def encrypt(s):\n    result = ''\n    for char in s:\n        if char.isalpha():\n            ascii_offset = 97 if char.islower() else 65\n            result += chr((ord(char) - ascii_offset + 2 * 26) % 26 + ascii_offset)\n        else:\n            result += char\n    return result",
+    "latency_sec": 2.470299482345581,
+    "tokens": 257,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/26",
+    "difficulty": "medium",
+    "generated_code": "def remove_duplicates(numbers: list[int]) -> list[int]:\n    seen = set()\n    result = []\n    for num in numbers:\n        if num not in seen:\n            result.append(num)\n            seen.add(num)\n    return result",
+    "latency_sec": 1.6243531703948975,
+    "tokens": 207,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/154",
+    "difficulty": "medium",
+    "generated_code": "def cycpattern_check(a, b):\n    for i in range(len(b)):\n        if b in a + a:\n            return True\n    return False",
+    "latency_sec": 1.187821865081787,
+    "tokens": 236,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/140",
+    "difficulty": "medium",
+    "generated_code": "def fix_spaces(text):\n    text = text.replace(\" \", \"_\")\n    while \"__\" in text:\n        text = text.replace(\"__\", \"_\")\n    return text",
+    "latency_sec": 1.3186674118041992,
+    "tokens": 215,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/111",
+    "difficulty": "medium",
+    "generated_code": "def histogram(test):\n    if not test:\n        return {}\n    letter_counts = {}\n    max_count = 0\n    for letter in test.split():\n        if letter in letter_counts:\n            letter_counts[letter] += 1\n        else:\n            letter_counts[letter] = 1\n        if letter_counts[letter] > max_count:\n            max_count = letter_counts[letter]\n    max_count_letters = [letter for letter, count in letter_counts.items() if count == max_count]\n    return {letter: max_count for letter in max_count_letters}",
+    "latency_sec": 5.607465982437134,
+    "tokens": 344,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/93",
+    "difficulty": "medium",
+    "generated_code": "def encode(message):\n    vowels = 'aeiouAEIOU'\n    result = ''\n    for char in message:\n        if char in vowels:\n            index = vowels.index(char)\n            result += chr(ord(vowels[index + 2]) if char.islower() else ord(vowels[index + 2].upper()))\n        else:\n            result += char.swapcase()\n    return result",
+    "latency_sec": 3.6670758724212646,
+    "tokens": 265,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/56",
+    "difficulty": "medium",
+    "generated_code": "def correct_bracketing(brackets: str):\n    stack = []\n    for bracket in brackets:\n        if bracket == \"<\":\n            stack.append(bracket)\n        elif bracket == \">\":\n            if not stack:\n                return False\n            stack.pop()\n    return not stack",
+    "latency_sec": 2.318652868270874,
+    "tokens": 223,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/31",
+    "difficulty": "medium",
+    "generated_code": "def is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+    "latency_sec": 2.3336737155914307,
+    "tokens": 226,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/7",
+    "difficulty": "hard",
+    "generated_code": "def filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]",
+    "latency_sec": 1.4691472053527832,
+    "tokens": 200,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/25",
+    "difficulty": "hard",
+    "generated_code": "from typing import List\n\ndef factorize(n: int) -> List[int]:\n    i = 2\n    factors = []\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n            factors.append(i)\n    if n > 1:\n        factors.append(n)\n    return factors",
+    "latency_sec": 3.1092569828033447,
+    "tokens": 276,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/132",
+    "difficulty": "hard",
+    "generated_code": "def is_nested(string):\n    stack = []\n    for bracket in string:\n        if bracket == '[':\n            stack.append(bracket)\n        elif bracket == ']':\n            if stack:\n                stack.pop()\n            else:\n                return False\n    return len(stack) > 0",
+    "latency_sec": 2.4527881145477295,
+    "tokens": 265,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/54",
+    "difficulty": "hard",
+    "generated_code": "def same_chars(s0: str, s1: str):\n    return sorted(s0) == sorted(s1)",
+    "latency_sec": 1.7230823040008545,
+    "tokens": 240,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/20",
+    "difficulty": "hard",
+    "generated_code": "from typing import List, Tuple\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    numbers.sort()\n    min_diff = float('inf')\n    closest_pair = (numbers[0], numbers[0])\n    for i in range(len(numbers) - 1):\n        diff = numbers[i + 1] - numbers[i]\n        if diff < min_diff:\n            min_diff = diff\n            closest_pair = (numbers[i], numbers[i + 1])\n    return closest_pair",
+    "latency_sec": 5.794229507446289,
+    "tokens": 346,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/6",
+    "difficulty": "hard",
+    "generated_code": "from typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    result = []\n    for group in paren_string.split():\n        depth = 0\n        max_depth = 0\n        for char in group:\n            if char == '(':\n                depth += 1\n                max_depth = max(max_depth, depth)\n            elif char == ')':\n                depth -= 1\n        result.append(max_depth)\n    return result",
+    "latency_sec": 6.9970643520355225,
+    "tokens": 282,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/41",
+    "difficulty": "hard",
+    "generated_code": "def car_race_collision(n: int):\n    return n * (n + 1) // 2",
+    "latency_sec": 1.6661248207092285,
+    "tokens": 248,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/126",
+    "difficulty": "hard",
+    "generated_code": "def is_sorted(lst):\n    return lst == sorted(lst) and len(lst) == len(set(lst))",
+    "latency_sec": 1.9469730854034424,
+    "tokens": 346,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/43",
+    "difficulty": "hard",
+    "generated_code": "def pairs_sum_to_zero(l):\n    seen = set()\n    for num in l:\n        if -num in seen:\n            return True\n        seen.add(num)\n    return False",
+    "latency_sec": 2.718045949935913,
+    "tokens": 270,
+    "token_source": "api"
+  },
+  {
+    "task_id": "HumanEval/99",
+    "difficulty": "hard",
+    "generated_code": "def closest_integer(value):\n    value = float(value)\n    return round(value + 0.5) if value - round(value) >= 0.5 else round(value)",
+    "latency_sec": 2.5423648357391357,
+    "tokens": 268,
+    "token_source": "api"
+  }
+]
